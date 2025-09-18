@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            height:100vh;
+            grid-template-areas:
+            'header header header'
+            'sidebar content1 content1'
+            'sidebar content2 content3'
+            'footer footer footer';
+
+        }
+        .header{
+            background-color:lightpink;
+            grid-area:header;
+        }
+        .sidebar{
+            background-color:lightblue;
+            grid-area:sidebar;
+
+        }
+        .content1{
+            background-color:lightsalmon;
+            grid-area:content1;
+
+        }
+        .content2{
+            background-color:rosybrown;
+            grid-area:content2;
+
+        }
+        .content3{
+            background-color:lightgreen;
+            grid-area:content3;
+
+        }
+        .footer{
+            background-color:lightseagreen;
+            grid-area:footer;
+
+        }
+        @media screen and (min-width:325px) and (max-width:425px){
+            .container{
+            display:grid;
+            height:100vh;
+            grid-template-areas:
+            'header header header '
+            'sidebar sidebar content1'
+            'content2 content3 content3'
+            'footer footer footer';
+
+        }
+        .header{
+            background-color:lightpink;
+            grid-area:header;
+        }
+        .sidebar{
+            background-color:lightblue;
+            grid-area:sidebar;
+
+        }
+        .content1{
+            background-color:lightsalmon;
+            grid-area:content1;
+
+        }
+        .content2{
+            background-color:rosybrown;
+            grid-area:content2;
+
+        }
+        .content3{
+            background-color:lightgreen;
+            grid-area:content3;
+
+        }
+        .footer{
+            background-color:lightseagreen;
+            grid-area:footer;
+
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="content1">content1</div>
+        <div class="content2">content2</div>
+        <div class="content3">content3</div>
+        <div class="footer">footer</div>
+
+    </div>
+
+</body>
+</html>
